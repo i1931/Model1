@@ -25,6 +25,7 @@ public partial class MapDbContext : DbContext
     {
         modelBuilder.Entity<Congestion>(entity =>
         {
+
             entity.HasKey(e => e.CongestionId).HasName("PK__Congesti__00400BFC3AD9F04C");
 
             entity.Property(e => e.CongestionLevel).HasMaxLength(20);
